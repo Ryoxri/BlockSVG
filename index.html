@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SVGBlocks</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="min-height: 100vh">
+    <div class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">SVGBlocks</span>
+    </div>
+    <div class="container-fluid row" style="height: 90vh; padding: 10px;">
+        <svg class="col-8" height="100%">
+            <path id="path" d></path>
+        </svg>
+        <div class="col-4 card" height="100%" style="padding: 0;">
+            <div class="card-body">
+                <h5 class="card-title">Set SVG Parameters</h5>
+                <label>SVG Templates:</label>
+                <div>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-dark" onclick="connector(80, 10, 10)">Connector</button>
+                        <button class="btn btn-dark" onclick="block(80, 10, 10, 20)">Block</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="index.js"></script>     
+</body>
+</html>
